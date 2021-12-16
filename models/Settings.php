@@ -17,6 +17,7 @@ class Settings extends Model
             'timeout'             => 2,
             'name'                => null,
             'excluded_exceptions' => [],
+            'traces_sample_rate'  => 0,
         ];
 
         $settings = self::where('item', 'offline_sentry_settings')->first(['value']);

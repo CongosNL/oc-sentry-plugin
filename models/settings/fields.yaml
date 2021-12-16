@@ -33,3 +33,10 @@ fields:
         span: auto
         type: switch
         comment: 'Logs any JavaScript errors that occur in the backend'
+    traces_sample_rate:
+        label: 'Traces sample rate'
+        span: auto
+        type: number
+        min: 0
+        max: 1
+        step: .01
